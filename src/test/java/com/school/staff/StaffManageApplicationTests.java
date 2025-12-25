@@ -13,7 +13,8 @@ import org.springframework.test.context.TestPropertySource;
     "spring.datasource.driver-class-name=org.h2.Driver",
     "spring.jpa.hibernate.ddl-auto=create-drop",
     "spring.data.redis.host=localhost",
-    "spring.data.redis.port=6379"
+    "spring.data.redis.port=6379",
+    "spring.sql.init.mode=never"
 })
 class StaffManageApplicationTests {
     
