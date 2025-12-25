@@ -48,14 +48,37 @@
 
 ## 快速开始
 
-### 1. 克隆项目
+### 方式一：使用 Docker Compose（推荐）
+
+使用 Docker Compose 快速启动 MySQL 和 Redis：
+
+```bash
+# 启动 MySQL 和 Redis
+docker-compose up -d
+
+# 查看服务状态
+docker-compose ps
+
+# 停止服务
+docker-compose down
+```
+
+然后运行应用：
+
+```bash
+mvn spring-boot:run
+```
+
+### 方式二：手动配置
+
+#### 1. 克隆项目
 
 ```bash
 git clone https://github.com/leikuman1/staffManageBack.git
 cd staffManageBack
 ```
 
-### 2. 配置数据库
+#### 2. 配置数据库
 
 创建 MySQL 数据库：
 
@@ -63,7 +86,7 @@ cd staffManageBack
 CREATE DATABASE staff_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-### 3. 配置 Redis
+#### 3. 配置 Redis
 
 确保 Redis 服务正在运行：
 
@@ -71,7 +94,7 @@ CREATE DATABASE staff_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_c
 redis-server
 ```
 
-### 4. 修改配置文件
+#### 4. 修改配置文件
 
 编辑 `src/main/resources/application.yml`，根据实际情况修改数据库和 Redis 连接信息：
 
@@ -89,7 +112,7 @@ spring:
       password: your_redis_password  # 如果有密码的话
 ```
 
-### 5. 构建和运行
+#### 5. 构建和运行
 
 ```bash
 # 构建项目
