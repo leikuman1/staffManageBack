@@ -1,4 +1,3 @@
-<<<<<<< copilot/add-school-personnel-management
 # School Personnel Management System Backend
 
 一个基于 Spring Boot 3.2、JDK 17、MySQL 和 Redis 的学校人员信息管理系统后端。
@@ -307,6 +306,3 @@ src/main/java/com/school/staff/
 
 MIT License
 =======
-
->>>>>>> main
-
